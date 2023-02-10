@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script>
+        <style type="text/tailwind.css">
+        @layer components{
+            .btn{
+                @apply px-2 py-2 rounded-md;
+            }
+        }
+        </style>
+        tailwind.config= {
+            theme: {
+                fontFamily: {
+                    poppins: ['Poppins',"sans-serif"]
+                }
+            }
+        }
+    </script>
+</head>
+<body class="mx-40 font-poppins">
+    <nav class="flex flex-row justify-between my-8">
+        <div>
+                <h1 class="text-2xl font-semibold">Adam wathan</h1>
+            </div>
+            <div class="flex flex-row gap-4">
+            <a>About me</a>
+            <a>Projects</a>
+            <a>Contact me</a>
+        </div>
+    </nav>
+    <main class="flex flex-row item-center"> 
+        <div class="flex flex-col-basis-3/4">
+            <h1 class="font-bold text-4xl">Hello I am adam wathan</h1>
+    <p>Hello everybody!!!</p>
+    <div class = "flex flex row gap-5">
+        <button class="bg-cyan-400 px-2 py2 rounded-md text-white">View instagram</button>
+        <button> View github</button>
+    </div>
+        </div>
+    <div class="basis-1/4">
+        <img src="tree-736885__480.jpg"class="w-72 hover:scale-110 transition duration-300">
+    </div>
+    </main>
+</body>
+</html>

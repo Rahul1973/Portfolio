@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(111.34deg, #4FCFF8 7.25%, #D0EBF0 90.66%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* ===================
+      TYPOGRAPHY        
+====================== */
+
+.nav--text {
+    font-size: 20px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.container--title {
+    font-size: 40px;
+    width: 400px;
+}
+
+.container--subtitle {
+    margin: 10px 0;
+    color: #4E545C;
+    font-weight: bold;
+}
+
+.form--subtitle {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+/* ===================
+      NAVBAR
+====================== */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 200px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.current-page {
+    border-bottom: 3px solid #00C2FF;
+}
+
+/* ====================
+      BODY
+======================= */
+
+.container {
+    width: 100%;
+    padding: 30px 150px;
+    display: flex;
+    flex-direction: row;
+}
+
+.container--text {
+    margin-left: 120px;
+    margin-top: 80px;
+    width: 50%;
+}
+
+/* ====================
+      FORM
+======================= */
+
+form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    width: 80%;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: none;
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid #0179E8;
+}
+
+input, 
+textarea, 
+.form--btn {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+input {
+    margin: 10px 0;
+}
+
+textarea {
+    height: 120px;
+}
+
+.form--btn {
+    margin: 15px 0;
+    width: 150px;
+    border-radius: 6px;
+    padding: 10px 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 12px;
+    border: none;
+    background: linear-gradient(96.85deg, #0079E8 25.93%, #2BCCFF 94.59%);
+    color: white;
+    cursor: pointer;
+}
+
+.form--btn:hover,
+.form--btn:focus {
+    background: linear-gradient(96.85deg, #1e86e8 20.93%, #4dccf3 90.59%);;
+}
